@@ -1,0 +1,12 @@
+{
+    "name": "pink",
+    "version": "0.1.0",
+    "private": false,
+    "description": "Проект \"Пинк\"",
+    "author": "Arslan Gapizov",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArslanGapizov/pink.git"
+    },
+    "homepage": "https://github.com/ArslanGapizov/pink"
+}
