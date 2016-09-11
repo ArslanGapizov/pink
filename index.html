@@ -5,6 +5,172 @@
     <title>Pink</title>
 </head>
 <body>
-    <p>Адаптивная верстка макета пинк</p>
+    <header class="page-header">
+        <h1 class="visually-hidden">Приложение «Pink» - меняет мир вокруг</h1>
+        <div class="page-header__logo">
+            <img src="img/logo.svg" width="" height="" alt="Приложение «Pink»">
+        </div>
+        <nav class="main-nav main-nav_closed">
+             <button class="main-nav__toggle" type="button">Открыть меню</button>
+             <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item_active"><a href="">Главная</a></li>
+                <li class="main-nav__item"><a href="">Фотографии</a></li>
+                <li class="main-nav__item"><a href="">Конкурс</a></li>
+                <li class="main-nav__item"><a href="">html academy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="beginning-index">
+            <div class="beginning-index__wrapper">
+                <span class="beginning-index__slogan">Взгляни на жизнь иначе!</span>
+            </div>
+            <div class="downloads">
+                <a href="#" class="downloads__btn btn_download">Скачать приложение</a>
+                <div class="downloads__links">
+                    <a class="downloads__link" href="#" title="itunes">apple</a>
+                    <a class="downloads__link" href="#" title="android">android</a>
+                    <a class="downloads__link" href="#" title="windows">windows</a>
+                </div>
+                <p class="downloads__text">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+        </section>
+        <section class="welcome">
+            <h2 class="welcome-title">
+                <span class="welcome-title__part">Устали от серости мегаполиса?</span>
+                <span class="welcome-title__part">Нам есть, что вам предложить!</span>
+            </h2>
+        </section>
+        <section class="advantages">
+            <div class="advantages__item">
+                <picture class="advantages__picture"></picture>
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantages__item">
+                <picture class="advantages__picture"></picture>
+                <h3 class="advantages__title">меняет мир вокруг</h3>
+                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="advantages__item">
+                <picture class="advantages__picture"></picture>
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+        </section>
+        <section class="reviews">
+            <input type="text" class="reviews__input" id="reviews-toggle-1" name="reviews">
+            <input type="text" class="reviews__input" id="reviews-toggle-2" name="reviews">
+            <input type="text" class="reviews__input" id="reviews-toggle-3" name="reviews">
+            <div class="reviews__item reviews__item_1">
+                <blockquote class="comment">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    <cite class="comment__author">Николай Петров</cite>
+                </blockquote>
+            </div>
+            <div class="reviews__item reviews__item_2">
+                <blockquote class="comment">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    <cite class="comment__author">Николай Петров</cite>
+                </blockquote>
+            </div>
+            <div class="reviews__item reviews__item_3">
+                <blockquote class="comment">
+                    <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    <cite class="comment__author">Николай Петров</cite>
+                </blockquote>
+            </div>
+            <div class="reviews__toggles">
+                <label for="reviews-toggle-1" class="reviews__toggle"></label>
+                <label for="reviews-toggle-2" class="reviews__toggle"></label>
+                <label for="reviews-toggle-3" class="reviews__toggle"></label>
+            </div>
+        </section>
+        <section class="tariffs">
+            <input type="text" class="tariffs__toggle" id="tariffs-toggle-1" name="prices">
+            <input type="text" class="tariffs__toggle" id="tariffs-toggle-2" name="prices">
+            <input type="text" class="tariffs__toggle" id="tariffs-toggle-3" name="prices">
+            <table class="tariffs__table">
+                <tbody>
+                    <tr>
+                        <th class="tariffs__th tariffs__th_empty">
+                        </th>
+                        <th class="tariffs__th">
+                            <h3 class="tariffs__title">База</h3>
+                            <div class="tariffs__price">1,99 USD</div>
+                        </th>
+                        <th class="tariffs__th">
+                            <div class="tariffs__hit"></div>
+                            <h3 class="tariffs__title">Стандарт</h3>
+                            <div class="tariffs__price">3,99 USD</div>
+                        </th>
+                        <th class="tariffs__th">
+                            <h3 class="tariffs__title">Анлим</h3>
+                            <div class="tariffs__price">9,99 USD</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="tariffs__option">Розовый фильтр</td>
+                        <td data-option="Розовый фильтр">
+                            <div class="tariffs__icon tariffs__icon_true"></div>
+                        </td>
+                        <td data-option="Розовый фильтр">
+                            <div class="tariffs__icon tariffs__icon_true"></div>
+                        </td>
+                        <td data-option="Розовый фильтр">
+                            <div class="tariffs__icon tariffs__icon_true"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tariffs__option">Смайлики</td>
+                        <td data-option="Смайлики">
+                            <div class="tariffs__icon tariffs__icon_false"></div>
+                        </td>
+                        <td data-option="Смайлики">
+                            <div class="tariffs__icon tariffs__icon_true"></div>
+                        </td>
+                        <td data-option="Смайлики">
+                            <div class="tariffs__icon tariffs__icon_true"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tariffs__option">Комментарии</td>
+                        <td data-option="Комментарии">
+                            <div class="tariffs__icon tariffs__icon_false"></div>
+                        </td>
+                        <td data-option="Комментарии">
+                            <div class="tariffs__icon tariffs__icon_false"></div>
+                        </td>
+                        <td data-option="Комментарии">
+                            <div class="tariffs__icon  tariffs__icon_true"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tariffs__toggles">
+                <label for="tariffs-toggle-1" class="tariffs__toggle"></label>
+                <label for="tariffs-toggle-2" class="ptariffs__toggle"></label>
+                <label for="tariffs-toggle-3" class="tariffs__toggle"></label>
+            </div>
+        </section>
+        <secion class="contacts">
+            <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
+            <div class="contacts__item contacts__item_phone">
+                <span class="contacts__title">Звоните:</span>
+                <a href="tel:+78125556666" class="contacts__description contacts__description_link">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item contacts__item_email">
+                <span class="contacts__title">Пишите:</span>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__description contacts__description_link">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item contacts__item_address">
+                <span class="contacts__title">Приезжайте в гости</span>
+                <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+            </div>
+        </secion>
+        <section class="map">
+            <div id="map"></div>
+        </section>
+    </main>
 </body>
 </html>
