@@ -1,0 +1,19 @@
+.main-nav {
+  width: 320px;
+  outline: 1px solid red;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  width: auto;
+  min-height: 256px;
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  height: 64px;
+  line-height: 64px;
+}

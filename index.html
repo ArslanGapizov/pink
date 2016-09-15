@@ -2,23 +2,26 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>Pink</title>
 </head>
 <body>
     <header class="page-header">
         <h1 class="visually-hidden">Приложение «Pink» - меняет мир вокруг</h1>
-        <div class="page-header__logo">
-            <img src="img/logo.svg" width="" height="" alt="Приложение «Pink»">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+              <img src="img/logo.svg" width="" height="" alt="Приложение «Pink»">
+          </div>
+          <div class="page-header__btn-burger page-header__btn-burger_show"></div>
+          <nav class="main-nav main-nav_open">
+               <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item_active"><a class="main-nav__link" href="">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="">Фотографии</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="">Конкурс</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
+              </ul>
+          </nav>
         </div>
-        <nav class="main-nav main-nav_closed">
-             <button class="main-nav__toggle" type="button">Открыть меню</button>
-             <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item_active"><a href="">Главная</a></li>
-                <li class="main-nav__item"><a href="">Фотографии</a></li>
-                <li class="main-nav__item"><a href="">Конкурс</a></li>
-                <li class="main-nav__item"><a href="">html academy</a></li>
-            </ul>
-        </nav>
     </header>
     <main class="page-content">
         <section class="beginning-index">
