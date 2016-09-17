@@ -1,0 +1,122 @@
+.advantages{
+  margin: 0;
+}
+.advantages__wrapper{
+  margin: 0;
+  @include container;
+  @include clearfix;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 320px;
+}
+@media #{$tablet-widths} {
+  .advantages__wrapper{
+    min-height: 481px;
+    padding-top: 75px;
+    padding-bottom: 45px;
+    padding-left: 310px;
+  }
+}
+@media #{$desktop-widths} {
+  .advantages__wrapper{
+    min-height: 568px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+}
+.advantages__picture{
+  display: none;
+}
+@media #{$desktop-widths} {
+  .advantages__picture{
+    outline: 1px solid red;
+    display: block;
+    width: 292px;
+    height: 302px;
+    margin-bottom: 55px;
+  }
+}
+.advantages__item{
+  text-align: center;
+  margin-bottom: 30px;
+  &:last-of-type{
+    margin-bottom: 0;
+      picture{
+        outline: 1px solid red;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 157px;
+        height: 277px;
+      }
+  }
+}
+@media #{$tablet-widths} {
+  .advantages__item{
+    text-align: left;
+    margin-bottom: 35px;
+    &:last-of-type{
+      picture{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 268px;
+        height: 481px;
+      }
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .advantages__item{
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    &:last-of-type{
+      picture{
+        display: block;
+        position: static;
+        transform: none;
+        width: 292px;
+        height: 302px;
+      }
+    }
+  }
+  .advantages__item{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    padding-left: 4px;
+    padding-right: 4px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+}
+.advantages__title{
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+@media #{$desktop-widths} {
+  .advantages__title{
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.advantages__text{
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media #{$desktop-widths} {
+  .advantages__text{
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

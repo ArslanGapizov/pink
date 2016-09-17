@@ -1,5 +1,10 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section{
+  outline: 1px solid red;
 }
 body {
   font-size: 14px;

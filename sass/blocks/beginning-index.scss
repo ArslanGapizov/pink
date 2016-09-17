@@ -5,13 +5,13 @@
 @media #{$tablet-widths} {
   .beginning-index{
     min-height: 730px;
-    padding-top: 210px;
+    padding-top: 190px;
   }
 }
 @media #{$desktop-widths} {
   .beginning-index{
     min-height: 850px;
-    padding-top: 230px;
+    padding-top: 220px;
   }
 }
 .beginning-index__wrapper{
@@ -45,11 +45,13 @@
   .beginning-index__title{
     display: block;
     font-size: 40px;
+    line-height: 50px;
   }
 }
 @media #{$desktop-widths} {
   .beginning-index__title{
     display: block;
     font-size: 50px;
+    line-height: 60px;
   }
 }
