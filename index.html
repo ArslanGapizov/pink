@@ -13,29 +13,32 @@
               <img src="img/logo.svg" width="" height="" alt="Приложение «Pink»">
           </div>
           <div class="page-header__btn-burger page-header__btn-burger_show"></div>
-          <nav class="main-nav main-nav_open">
-               <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item_active"><a class="main-nav__link" href="">Главная</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="">Фотографии</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="">Конкурс</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="">html academy</a></li>
-              </ul>
-          </nav>
+
+            <nav class="main-nav main-nav_closed">
+                 <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item_active"><a class="main-nav__link" href="">Главная</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="">Фотографии</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="">Конкурс</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="page-content">
         <section class="beginning-index">
             <div class="beginning-index__wrapper">
-                <span class="beginning-index__slogan">Взгляни на жизнь иначе!</span>
+                <h2 class="beginning-index__title">Взгляните на жизнь иначе!</h2>
             </div>
             <div class="downloads">
-                <a href="#" class="downloads__btn btn_download">Скачать приложение</a>
-                <div class="downloads__links">
-                    <a class="downloads__link" href="#" title="itunes">apple</a>
-                    <a class="downloads__link" href="#" title="android">android</a>
-                    <a class="downloads__link" href="#" title="windows">windows</a>
+                <div class="downloads__wrapper">
+                  <a href="#" class="downloads__btn btn_download">Скачать приложение</a>
+                  <div class="downloads__links">
+                      <a class="downloads__link" href="#" title="apple">apple <svg class="downloads__svg downloads__svg_apple"></svg></a>
+                      <a class="downloads__link" href="#" title="android">android <svg class="downloads__svg downloads__svg_android"></svg></a>
+                      <a class="downloads__link" href="#" title="windows">windows <svg class="downloads__svg downloads__svg_windows"></svg></a>
+                  </div>
+                  <p class="downloads__text">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
                 </div>
-                <p class="downloads__text">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
         </section>
         <section class="welcome">
@@ -62,9 +65,9 @@
             </div>
         </section>
         <section class="reviews">
-            <input type="text" class="reviews__input" id="reviews-toggle-1" name="reviews">
-            <input type="text" class="reviews__input" id="reviews-toggle-2" name="reviews">
-            <input type="text" class="reviews__input" id="reviews-toggle-3" name="reviews">
+            <input type="radio" class="reviews__input" id="reviews-toggle-1" name="reviews" checked>
+            <input type="radio" class="reviews__input" id="reviews-toggle-2" name="reviews">
+            <input type="radio" class="reviews__input" id="reviews-toggle-3" name="reviews">
             <div class="reviews__item reviews__item_1">
                 <blockquote class="comment">
                     <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -90,9 +93,9 @@
             </div>
         </section>
         <section class="tariffs">
-            <input type="text" class="tariffs__toggle" id="tariffs-toggle-1" name="prices">
-            <input type="text" class="tariffs__toggle" id="tariffs-toggle-2" name="prices">
-            <input type="text" class="tariffs__toggle" id="tariffs-toggle-3" name="prices">
+            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-1" name="prices">
+            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-2" name="prices">
+            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-3" name="prices">
             <table class="tariffs__table">
                 <tbody>
                     <tr>

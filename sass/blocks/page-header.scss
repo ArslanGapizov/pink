@@ -1,5 +1,5 @@
 .page-header {
-  min-height: 66px;
+  min-height: 70px;
   outline: 1px solid red;
 }
 @media #{$tablet-widths} {
@@ -13,30 +13,42 @@
   }
 }
 .page-header__wrapper {
+  position: relative;
   @include clearfix;
   @include container;
 }
 .page-header__logo {
+  float: left;
   outline: 1px solid red;
   width: 76px;
   height: 24px;
+  margin-top: 22px;
 }
 @media #{$tablet-widths} {
   .page-header__logo {
     width: 147px;
     height: 40px;
+    margin-top: 27px;
   }
 }
 @media #{$desktop-widths} {
   .page-header__logo {
     width: 174px;
     height: 40px;
+    margin-top: 27px;
   }
 }
 .page-header__btn-burger {
+  float: right;
   outline: 1px solid red;
   width: 50px;
   height: 24px;
+  margin-top: 22px;
+}
+@media #{$tablet-widths}{
+  .page-header__btn-burger{
+    margin-top: 44px;
+  }
 }
 @media #{$desktop-widths} {
   .page-header__btn-burger{
