@@ -1,0 +1,36 @@
+.form{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.form__fieldset{
+  @include container;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  &_name{
+
+  }
+  &_os{
+
+  }
+  &_contacts{
+
+  }
+  &_achievements{
+
+  }
+  &_textarea{
+
+  }
+}
+.form__footer{
+  @include container;
+  @include clearfix;
+}
+@media #{$tablet-widths} {
+  .form__btn{
+    float: left;
+  }
+  .form__note{
+    float: right;
+  }
+}

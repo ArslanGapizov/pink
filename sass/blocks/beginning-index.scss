@@ -1,23 +1,37 @@
 .beginning{
-  min-height: 730px;
   outline: 1px solid red;
+  min-height: 237px;
+  padding-top: 95px;
+  &_index{
+      min-height: 730px;
+  }
 }
 @media #{$tablet-widths} {
   .beginning{
-    min-height: 730px;
-    padding-top: 190px;
+    min-height: 440px;
+    padding-top: 180px;
+    &_index{
+        min-height: 730px;
+        padding-top: 190px;
+    }
   }
 }
 @media #{$desktop-widths} {
   .beginning{
-    min-height: 850px;
-    padding-top: 220px;
+    min-height: 395px;
+    padding-top: 170px;
+    &_index{
+      min-height: 850px;
+      padding-top: 220px;
+    }
   }
 }
 .beginning__wrapper{
   @include container;
   display: block;
-  min-height: 458px;
+  &_index{
+    min-height: 458px;
+  }
 }
 @media #{$tablet-widths} {
   .beginning__wrapper{
@@ -32,20 +46,28 @@
   }
 }
 .beginning__title{
-  display: none;
-  width: 300px;
+  display: block;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-left: 35px;
-  padding-right: 35px;
+  font-size: 24px;
+  line-height: 1.2;
   font-weight: 300;
   text-align: center;
+  &_index{
+    display: none;
+    width: 300px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 @media #{$tablet-widths} {
   .beginning__title{
     display: block;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 50px;
+    &_index{
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 }
 @media #{$desktop-widths} {
@@ -53,5 +75,8 @@
     display: block;
     font-size: 50px;
     line-height: 60px;
+    &_index{
+
+    }
   }
 }

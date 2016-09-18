@@ -1,11 +1,34 @@
 .page-footer{
-  display: none;
+  &_index{
+    display: none;
+  }
 }
 .page-footer__wrapper{
-    outline: 1px solid red;
-    display: block;
-    @include container;
-    @include clearfix;
+  outline: 1px solid red;
+  display: block;
+  @include container;
+  @include clearfix;
+  height: 244px;
+  padding-top: 40px;
+}
+.page-footer__item{
+  outline: 1px solid red;
+  display: block;
+  margin: 0 auto;
+  &_logo{
+    height: 40px;
+    width: 147px;
+    margin-bottom: 40px;
+  }
+  &_social{
+    height: 52px;
+    width: 178px;
+    margin-bottom: 38px;
+  }
+  &_copyright{
+    height: 34px;
+    width: 127px;
+  }
 }
 @media #{$tablet-widths} {
   .page-footer{
@@ -13,9 +36,9 @@
   }
   .page-footer__wrapper{
     height: 127px;
+    padding-top: 0;
   }
   .page-footer__item{
-    outline: 1px solid red;
     display: block;
     width: 150px;
     &_logo{
@@ -45,7 +68,6 @@
     height: 197px;
   }
   .page-footer__item{
-    outline: 1px solid red;
     display: block;
     width: 150px;
     &_logo{
