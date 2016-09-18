@@ -1,37 +1,37 @@
-.beginning-index{
+.beginning{
   min-height: 730px;
   outline: 1px solid red;
 }
 @media #{$tablet-widths} {
-  .beginning-index{
+  .beginning{
     min-height: 730px;
     padding-top: 190px;
   }
 }
 @media #{$desktop-widths} {
-  .beginning-index{
+  .beginning{
     min-height: 850px;
     padding-top: 220px;
   }
 }
-.beginning-index__wrapper{
+.beginning__wrapper{
   @include container;
   display: block;
   min-height: 458px;
 }
 @media #{$tablet-widths} {
-  .beginning-index__wrapper{
+  .beginning__wrapper{
     display: block;
     min-height: 0px;
   }
 }
 @media #{$desktop-widths} {
-  .beginning-index__wrapper{
+  .beginning__wrapper{
     display: block;
     min-height: 0px;
   }
 }
-.beginning-index__title{
+.beginning__title{
   display: none;
   width: 300px;
   margin-top: 0px;
@@ -42,14 +42,14 @@
   text-align: center;
 }
 @media #{$tablet-widths} {
-  .beginning-index__title{
+  .beginning__title{
     display: block;
     font-size: 40px;
     line-height: 50px;
   }
 }
 @media #{$desktop-widths} {
-  .beginning-index__title{
+  .beginning__title{
     display: block;
     font-size: 50px;
     line-height: 60px;
