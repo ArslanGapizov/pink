@@ -28,6 +28,7 @@
 }
 .reviews__toggles{
   outline: 1px solid red;
+  @include clearfix;
   position: absolute;
   bottom: 42px;
   left: 50%;
@@ -42,7 +43,6 @@
 }
 .reviews__toggle{
   outline: 1px solid red;
-  @include clearfix;
   float: left;
   display: block;
   height: 12px;

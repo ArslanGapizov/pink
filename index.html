@@ -106,12 +106,13 @@
             </div>
         </section>
         <section class="tariffs">
-            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-1" name="prices">
-            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-2" name="prices">
-            <input type="radio" class="tariffs__toggle" id="tariffs-toggle-3" name="prices">
+          <div class="tariffs__wrapper">
+            <input type="radio" class="tariffs__input" id="tariffs-toggle-1" name="prices" checked>
+            <input type="radio" class="tariffs__input" id="tariffs-toggle-2" name="prices">
+            <input type="radio" class="tariffs__input" id="tariffs-toggle-3" name="prices">
             <table class="tariffs__table">
                 <tbody>
-                    <tr>
+                    <tr class="tariffs__head">
                         <th class="tariffs__th tariffs__th_empty">
                         </th>
                         <th class="tariffs__th">
@@ -128,39 +129,39 @@
                             <div class="tariffs__price">9,99 USD</div>
                         </th>
                     </tr>
-                    <tr>
+                    <tr class="tariffs__row">
                         <td class="tariffs__option">Розовый фильтр</td>
-                        <td data-option="Розовый фильтр">
+                        <td class="tariffs__cell" data-option="Розовый фильтр">
                             <div class="tariffs__icon tariffs__icon_true"></div>
                         </td>
-                        <td data-option="Розовый фильтр">
+                        <td class="tariffs__cell" data-option="Розовый фильтр">
                             <div class="tariffs__icon tariffs__icon_true"></div>
                         </td>
-                        <td data-option="Розовый фильтр">
+                        <td class="tariffs__cell" data-option="Розовый фильтр">
                             <div class="tariffs__icon tariffs__icon_true"></div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="tariffs__row">
                         <td class="tariffs__option">Смайлики</td>
                         <td data-option="Смайлики">
                             <div class="tariffs__icon tariffs__icon_false"></div>
                         </td>
-                        <td data-option="Смайлики">
+                        <td class="tariffs__cell" data-option="Смайлики">
                             <div class="tariffs__icon tariffs__icon_true"></div>
                         </td>
-                        <td data-option="Смайлики">
+                        <td class="tariffs__cell" data-option="Смайлики">
                             <div class="tariffs__icon tariffs__icon_true"></div>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="tariffs__row">
                         <td class="tariffs__option">Комментарии</td>
-                        <td data-option="Комментарии">
+                        <td class="tariffs__cell" data-option="Комментарии">
                             <div class="tariffs__icon tariffs__icon_false"></div>
                         </td>
-                        <td data-option="Комментарии">
+                        <td class="tariffs__cell" data-option="Комментарии">
                             <div class="tariffs__icon tariffs__icon_false"></div>
                         </td>
-                        <td data-option="Комментарии">
+                        <td class="tariffs__cell" data-option="Комментарии">
                             <div class="tariffs__icon  tariffs__icon_true"></div>
                         </td>
                     </tr>
@@ -168,8 +169,9 @@
             </table>
             <div class="tariffs__toggles">
                 <label for="tariffs-toggle-1" class="tariffs__toggle"></label>
-                <label for="tariffs-toggle-2" class="ptariffs__toggle"></label>
+                <label for="tariffs-toggle-2" class="tariffs__toggle"></label>
                 <label for="tariffs-toggle-3" class="tariffs__toggle"></label>
+            </div>
             </div>
         </section>
         <secion class="contacts">

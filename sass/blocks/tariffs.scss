@@ -1,0 +1,165 @@
+th, td{
+  outline: 1px solid red;
+}
+
+.tariffs{
+
+}
+.tariffs__wrapper{
+  @include container;
+  position: relative;
+  min-height: 470px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+@media #{$tablet-widths} {
+  .tariffs__wrapper{
+    min-height: 380px;
+    padding-bottom: 60px;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__wrapper{
+    padding-top: 150px;
+    min-height: 525px;
+  }
+}
+.tariffs__input{
+  display: none;
+}
+.tariffs__table{
+  position: relative;
+  width: 840px;
+}
+@media #{$tablet-widths} {
+  .tariffs__table{
+    position: static;
+    width: 620px;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__table{
+    position: static;
+    width: 940px;
+  }
+}
+#tariffs-toggle-1:checked ~ .tariffs__table{
+  left: 0;
+}
+#tariffs-toggle-2:checked ~ .tariffs__table{
+  left: -280px;
+}
+#tariffs-toggle-3:checked ~ .tariffs__table{
+  left: -560px;
+}
+@media #{$tablet-widths} {
+  #tariffs-toggle-1:checked ~ .tariffs__table{
+    left: 0;
+  }
+  #tariffs-toggle-2:checked ~ .tariffs__table{
+    left: 0;
+  }
+  #tariffs-toggle-3:checked ~ .tariffs__table{
+    left: 0;
+  }
+}
+@media #{$desktop-widths} {
+  #tariffs-toggle-1:checked ~ .tariffs__table{
+    left: 0;
+  }
+  #tariffs-toggle-2:checked ~ .tariffs__table{
+    left: 0;
+  }
+  #tariffs-toggle-3:checked ~ .tariffs__table{
+    left: 0;
+  }
+}
+.tariffs__th_empty{
+  display: none;
+}
+@media #{$tablet-widths} {
+  .tariffs__th_empty{
+    display: table-cell;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__th_empty{
+    display: table-cell;
+  }
+}
+.tariffs__option{
+  display: none;
+}
+@media #{$tablet-widths} {
+  .tariffs__option{
+    display: table-cell;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__option{
+    display: table-cell;
+  }
+}
+.tariffs__th{
+  height: 98px;
+  width: 280px;
+}
+@media #{$tablet-widths} {
+  .tariffs__th{
+    height: 80px;
+    width: 155px;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__th{
+    height: 100px;
+    width: 235px;
+  }
+}
+.tariffs__cell{
+  height: 60px;
+  width: 280px;
+}
+@media #{$tablet-widths} {
+  .tariffs__cell{
+    height: 46px;
+    width: 155px;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__cell{
+    height: 60px;
+    width: 235px;
+  }
+}
+.tariffs__toggles{
+  outline: 1px solid red;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 62px;
+  height: 12px;
+}
+@media #{$tablet-widths} {
+  .tariffs__toggles{
+    display: none;
+  }
+}
+@media #{$desktop-widths} {
+  .tariffs__toggles{
+    display: none;
+  }
+}
+.tariffs__toggle{
+  outline: 1px solid red;
+  display: block;
+  float: left;
+  height: 12px;
+  width: 12px;
+  margin-right: 13px;
+  cursor: pointer;
+  &:last-of-type{
+    margin-right: 0;
+  }
+}
