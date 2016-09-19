@@ -3,28 +3,103 @@
   padding-bottom: 40px;
 }
 .form__fieldset{
-  @include container;
+  outline: 1px solid red;
   padding-top: 35px;
   padding-bottom: 45px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   &_name{
-
   }
   &_os{
-
+    background: #f2f2f2;
   }
   &_contacts{
 
   }
   &_achievements{
-
+    background: #f2f2f2;
   }
   &_textarea{
 
   }
 }
+@media #{$tablet-widths} {
+
+}
+@media #{$desktop-widths} {
+
+}
+.form__title{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  &_textarea{
+    margin-bottom: 20px;
+  }
+}
+.form__item{
+  outline: 1px solid red;
+  &_name{
+    margin-bottom: 25px;
+  }
+  &_os{
+    margin-bottom: 36px;
+  }
+  &_contacts{
+    margin-bottom: 25px;
+  }
+  &_achievements{
+    margin-bottom: 42px;
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+@media #{$tablet-widths} {
+  .form__item{
+    outline: 1px solid red;
+    &_name{
+      margin-bottom: 54px;
+    }
+    &_os{
+      margin-bottom: 36px;
+    }
+    &_contacts{
+      margin-bottom: 36px;
+    }
+    &_achievements{
+      margin-bottom: 44px;
+    }
+  }
+}
+@media #{$desktop-widths}{
+  .form__item{
+    outline: 1px solid red;
+    &_name{
+      margin-bottom: 54px;
+    }
+    &_os{
+      margin-bottom: 36px;
+    }
+    &_contacts{
+      margin-bottom: 0;
+    }
+    &_achievements{
+      margin-bottom: 44px;
+    }
+  }
+}
 .form__footer{
   @include container;
   @include clearfix;
+}
+.form__textarea{
+  width: 100%;
+  resize: vertical;
 }
 @media #{$tablet-widths} {
   .form__btn{
