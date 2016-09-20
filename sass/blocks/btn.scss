@@ -1,0 +1,20 @@
+.btn{
+  text-decoration: none;
+  height: 63px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 63px;
+  width: 100%;
+  border: none;
+  &_submit{
+    color: #fff;
+    background-color: #2aab6d;
+    &:hover{
+      background-color: #1c9b5e;
+    }
+    &:active{
+      color: #61b98f;
+      background-color: #1c9b5e;
+    }
+  }
+}

@@ -19,9 +19,21 @@
     border-radius: 50%;
     padding: 10px;
   }
+  &:hover{
+    &:before{
+      border-color: #283645;
+    }
+  }
+  &:active{
+    &:before{
+      border-color: #d22856;
+    }
+  }
 }
-.radio__input:checked + .radio__label::before{
-  background-color: #d22856;
-  background-clip: content-box;
-  background-origin: content-box;
+.radio__input:checked + .radio__label{
+  &::before{
+    background-color: #d22856;
+    background-clip: content-box;
+    background-origin: content-box;
+  }
 }
