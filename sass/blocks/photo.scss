@@ -1,0 +1,131 @@
+@media #{$mobile-widths-only} {
+  .photo{
+      @include container;
+  }
+}
+
+.photo{
+
+  &_top{
+
+  }
+}
+@media #{$tablet-widths} {
+  .photo{
+  }
+}
+@media #{$desktop-widths} {
+  .photo{
+  }
+}
+.photo__hot{
+  @include container;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: 'Панорама дня';
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 0;
+    line-height: 36px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #d22856;
+  }
+}
+@media #{$tablet-widths} {
+  .photo__hot{
+    top: 58px;
+  }
+}
+
+.photo__picture{
+  outline: 1px solid red;
+  display: block;
+  height: 180px;
+}
+@media #{$tablet-widths} {
+  .photo__picture{
+    height: 300px;
+  }
+}
+@media #{$desktop-widths} {
+  .photo__picture{
+    height: 400px;
+  }
+}
+.photo__content{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media #{$tablet-widths} {
+  .photo__content{
+    position: relative;
+    height: 155px;
+    padding-top: 25px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 25px;
+    &_top{
+      height: auto;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .photo__content{
+
+  }
+}
+.photo__name{
+  font-weight: 700;
+  font-style: normal;
+}
+.photo__time{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.photo__comment{
+  margin-bottom: 6px;
+}
+@media #{$tablet-widths} {
+  .photo__footer{
+    position: absolute;
+    bottom: 25px;
+    left: 28px;
+    right: 28px;
+  }
+  .photo__content_top .photo__footer{
+    left: auto;
+    padding-right: 30px;
+    bottom: auto;
+    top: 25px;
+  }
+}
+.photo__hearth{
+  outline: 1px solid red;
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: 18px;
+}
+@media #{$tablet-widths} {
+  .photo__hearth{
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+}
+.photo__likes{
+  font-size: 12px;
+  text-transform: uppercase;
+}
