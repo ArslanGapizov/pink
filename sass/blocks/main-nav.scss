@@ -3,7 +3,6 @@
   top: 70px;
   z-index: 1;
   width: 100%;
-  outline: 1px solid red;
   &_open {
     display: block;
   }
@@ -54,7 +53,19 @@
   text-decoration: none;
   text-align: center;
   height: 64px;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 64px;
+  color: #fff;
+  background-color: #283645;
+  border-top: 1px solid #495562;
+  border-bottom: 1px solid #000;
+  &:hover{
+    color: #d22856;
+  }
+  &:active{
+    color: #5f3650;
+  }
 }
 @media #{$desktop-widths} {
   .main-nav__item{
@@ -63,8 +74,30 @@
   }
   .main-nav__link {
     display: block;
-    height: 18px;
+    height: 26px;
     line-height: 18px;
     font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: none;
+    border: none;
+    &:hover{
+      color: #fff;
+      border-bottom: 2px solid #fff;
+    }
+    &:active{
+      color: #6a757f;
+      border-bottom: none;
+    }
+    &_active{
+      &:hover{
+        color: #d22856;
+        border-bottom: 2px solid #d22856;
+      }
+      &:active{
+        color: #6a757f;
+        border-bottom: none;
+      }
+    }
   }
 }

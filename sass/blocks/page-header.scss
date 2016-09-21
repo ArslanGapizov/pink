@@ -1,6 +1,10 @@
 .page-header {
   min-height: 70px;
-  outline: 1px solid red;
+  background-color: #283645;
+  /*opacity when closed*/
+  &_active{
+    border-bottom: 1px solid #000;
+  }
 }
 @media #{$tablet-widths} {
   .page-header {
@@ -19,7 +23,6 @@
 }
 .page-header__logo {
   float: left;
-  outline: 1px solid red;
   width: 76px;
   height: 24px;
   margin-top: 22px;
@@ -39,11 +42,63 @@
   }
 }
 .page-header__btn-burger {
+  position: relative;
   float: right;
-  outline: 1px solid red;
   width: 50px;
   height: 24px;
   margin-top: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  &::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    top: 0;
+    width: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 0 0 #fff;
+    transform-origin: center;
+  }
+  &::after{
+      content: '';
+      position: absolute;
+      height: 4px;
+      bottom: 0;
+      width: 50px;
+      background-color: #fff;
+      transform-origin: center;
+  }
+  &:hover{
+    &:before{
+      background-color: #d22856;
+      box-shadow: 0 10px 0 0 #d22856;
+    }
+    &:after{
+      background-color: #d22856;
+    }
+  }
+  &_active{
+      &::before{
+        width: 35px;
+        top: 12px;
+        transform: rotate(-45deg);
+        box-shadow: none;
+      }
+      &::after{
+        width: 35px;
+        top: 12px;
+        transform: rotate(45deg);
+      }
+      &:hover{
+        &:before{
+          background-color: #d22856;
+          box-shadow: none;
+        }
+        &:after{
+          background-color: #d22856;
+        }
+      }
+  }
 }
 @media #{$tablet-widths}{
   .page-header__btn-burger{

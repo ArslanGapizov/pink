@@ -14,9 +14,13 @@
         <h1 class="visually-hidden">Приложение «Pink» - меняет мир вокруг</h1>
         <div class="page-header__wrapper">
             <div class="page-header__logo">
-                <div class="logo">
-                    <a href="#" class="logo__link"></a>
-                </div>
+                <a href="#" class="logo">
+                  <picture class="logo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/Pink-logo-3@1x.png 1x, img/Pink-logo-3@2x.png 2x">
+                    <source media="(min-width: 700px)" srcset="img/Pink-logo-2@1x.png 1x, img/Pink-logo-2@2x.png 2x">
+                    <img class="logo__image" srcset="img/Pink-logo-1.png" class="logo__img">
+                  </picture>
+                </a>
             </div>
             <div class="page-header__btn-burger page-header__btn-burger_show"></div>
 
@@ -24,7 +28,7 @@
                 <ul class="main-nav__list">
                     <li class="main-nav__item main-nav__item_active"><a class="main-nav__link" href="">Главная</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="">Фотографии</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="">Конкурс</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link main-nav__link_active" href="">Конкурс</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="">HTML Academy</a></li>
                 </ul>
             </nav>
