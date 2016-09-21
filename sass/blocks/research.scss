@@ -6,11 +6,14 @@
     display: block;
   }
   .research__wrapper{
-    outline: 1px solid red;
     @include container;
     min-height: 380px;
     padding-top: 100px;
     padding-left: 310px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: 240px, 280px;
+    background-position: top 57px left;
   }
   .research__title{
     font-size: 30px;
@@ -35,12 +38,14 @@
 @media #{$desktop-widths} {
   .research{
     display: block;
+    background-color: #f2f2f2;
   }
   .research__wrapper{
     @include container;
     min-height: 472px;
     padding-top: 155px;
     padding-left: 370px;
+    background-size: 300px, 350px;
   }
   .research__title{
     font-size: 30px;
