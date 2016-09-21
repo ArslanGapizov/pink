@@ -24,7 +24,7 @@
     color: #d22a58;
     border-radius: 32px;
     height: 55px;
-    line-height: 55px;
+    line-height: 49px;
     &:hover{
       background-color: #d22856;
       color: #fff;
@@ -48,6 +48,24 @@
       border-color: #b5b9be;
       background-color: #b5b9be;
       color: #cbced2;
+    }
+  }
+  &_download{
+    border: 3px solid #fff;
+    height: 55px;
+    line-height: 49px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 28px;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+      background-color: #fff;
+      color: #d22856;
+    }
+    &:active{
+      color: #f1becc;
     }
   }
 }

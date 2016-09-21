@@ -1,15 +1,24 @@
 .downloads{
-  @include container;
+}
+@media #{$mobile-widths-only} {
+  .downloads{
+    background-color: #1d2631;
+  }
 }
 .downloads__wrapper{
+  @include container;
   width: 280px;
   min-height: 272px;
   padding-top: 28px;
 }
 @media #{$tablet-widths} {
+  .downloads{
+    @include container;
+  }
   .downloads__wrapper {
     width: 300px;
     padding-top: 38px;
+    margin-left: 0;
     margin-right: 320px;
   }
 }
@@ -17,15 +26,12 @@
   .downloads__wrapper {
     width: 300px;
     padding-top: 52px;
+    margin-left: 0;
     margin-right: 640px;
   }
 }
 .downloads__btn{
-  outline: 1px solid red;
   display: block;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
   margin-bottom: 32px;
 }
 @media #{$tablet-widths}{
@@ -57,21 +63,20 @@
     padding-left: 48px;
     padding-right: 48px;
     margin-bottom: 55px;
+    vertical-align: middle;
   }
 }
 .downloads__link{
-  float: left;
-  display: block;
-  height: 56px;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 0;
   color: transparent;
-  margin-right: 35px;
+  margin-right: 31px;
   &:last-of-type{
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 .downloads__svg{
-  outline: 1px solid red;
   &_apple {
     width: 47px;
     height: 56px;
@@ -91,6 +96,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  color: #fff;
 }
 @media #{$tablet-widths} {
   .downloads__text{

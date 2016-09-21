@@ -1,6 +1,8 @@
 .page-header {
+  position: fixed;
+  width: 100%;
   min-height: 70px;
-  background-color: #283645;
+  background-color: transparentize(#283645, 0.3);
   /*opacity when closed*/
   &_active{
     border-bottom: 1px solid #000;

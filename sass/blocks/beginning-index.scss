@@ -2,17 +2,32 @@
   outline: 1px solid red;
   min-height: 237px;
   padding-top: 95px;
+
+  background-color: #2c3949;
+  background-image: url("../img/background-1@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
   &_index{
+      background: none;
       min-height: 730px;
+      padding-top: 0px;
   }
 }
 @media #{$tablet-widths} {
   .beginning{
     min-height: 440px;
     padding-top: 180px;
+
+    background-color: #2c3949;
+    background-image: url("../img/background-2@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
     &_index{
         min-height: 730px;
         padding-top: 190px;
+        background-image:url("../img/iphone-hand-2@1x.png"), url("../img/background-2@1x.jpg");
+        background-repeat: no-repeat;
+        background-position:bottom, center top;
     }
   }
 }
@@ -20,21 +35,41 @@
   .beginning{
     min-height: 395px;
     padding-top: 170px;
+
+    background-color: #2c3949;
+    background-image: url("../img/background-fullsize.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
     &_index{
       min-height: 850px;
       padding-top: 220px;
+      background-image:url("../img/iphone-hand-3@1x.png"), url("../img/background-fullsize.jpg");
+      background-repeat: no-repeat;
+      background-position:bottom, center top;
+      background-size:auto, cover;
     }
   }
 }
 .beginning__wrapper{
-  @include container;
   display: block;
   &_index{
     min-height: 458px;
   }
 }
+@media #{$mobile-widths-only} {
+  .beginning__wrapper{
+    &_index{
+      background-color: #2c3949;
+      background-image:url("../img/iphone-hand-1.png"), url("../img/background-1@1x.jpg");
+      background-repeat: no-repeat;
+      background-position:bottom, center;
+    }
+  }
+}
 @media #{$tablet-widths} {
   .beginning__wrapper{
+    @include container;
     display: block;
     min-height: 0px;
   }
@@ -46,6 +81,7 @@
   }
 }
 .beginning__title{
+  @include container;
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -53,9 +89,10 @@
   line-height: 1.2;
   font-weight: 300;
   text-align: center;
+  color: #fff;
   &_index{
-    display: none;
     width: 300px;
+    display: none;
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -65,6 +102,8 @@
     display: block;
     font-size: 50px;
     &_index{
+      margin: 0;
+      width: 300px;
       font-size: 40px;
       line-height: 50px;
     }
@@ -76,7 +115,8 @@
     font-size: 50px;
     line-height: 60px;
     &_index{
-
+      margin: 0;
+      width: 300px;
     }
   }
 }
