@@ -4,7 +4,6 @@
   }
 }
 .page-footer__wrapper{
-  outline: 1px solid red;
   display: block;
   @include container;
   @include clearfix;
@@ -12,7 +11,6 @@
   padding-top: 40px;
 }
 .page-footer__item{
-  outline: 1px solid red;
   display: block;
   margin: 0 auto;
   &_logo{

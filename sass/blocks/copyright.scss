@@ -1,0 +1,33 @@
+.copyright{
+}
+.copyright__link{
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  color: #45515e;
+}
+.copyright__text{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.copyright__svg{
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  width: 27px;
+  fill: #d22856;
+}
+.copyright__link{
+  &:hover{
+    .copyright__svg{
+      fill: #283645;
+    }
+  }
+  &:active{
+    .copyright__svg{
+      fill: #bec2c7;
+    }
+  }
+}
