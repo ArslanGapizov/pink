@@ -5,7 +5,6 @@
 }
 .reviews__wrapper{
   position: relative;
-  outline: 1px solid red;
   @include container;
   min-height: 352px;
   padding-top: 45px;
@@ -39,7 +38,6 @@
   display: none;
 }
 .reviews__toggles{
-  outline: 1px solid red;
   @include clearfix;
   position: absolute;
   bottom: 42px;
