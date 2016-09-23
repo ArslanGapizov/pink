@@ -16,9 +16,10 @@
     height: 39px;
     width: 39px;
     border: 2px solid #e5e5e5;
-    background-color: #fff;
-    background-clip: content-box;
-    background-origin: content-box;
+    background-color: #d22856;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    box-shadow: 0 0 0 20px #fff inset;
     border-radius: 50%;
     padding: 10px;
     transition: 0.3s;
@@ -36,6 +37,6 @@
 }
 .radio__input:checked + .radio__label{
   &::before{
-    background-color: #d22856;
+    box-shadow: 0 0 0 10px #fff inset;
   }
 }
