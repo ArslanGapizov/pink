@@ -1,6 +1,5 @@
 .form{
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 @media #{$tablet-widths} {
   .form{
@@ -8,7 +7,6 @@
   }
 }
 .form__fieldset{
-  outline: 1px solid red;
   padding-top: 35px;
   padding-bottom: 45px;
   padding-left: 6.25%;
@@ -30,7 +28,6 @@
 }
 @media #{$tablet-widths} {
   .form__fieldset{
-    outline: none;
     padding-top: 35px;
     padding-bottom: 45px;
     padding-left: 60px;
@@ -58,12 +55,12 @@
     &_border{
       position: relative;
       border: 2px solid #e7e7e7;
+      border-radius: 3px;
     }
   }
 }
 @media #{$desktop-widths} {
   .form__fieldset{
-    outline: 1px solid red;
     padding-top: 35px;
     padding-bottom: 45px;
     padding-left: 60px;
@@ -126,7 +123,6 @@
 }
 
 .form__item{
-  outline: 1px solid red;
   &_name{
     margin-bottom: 25px;
   }
@@ -161,7 +157,6 @@
 }
 @media #{$desktop-widths}{
   .form__item{
-    outline: 1px solid red;
     &_name{
       margin-bottom: 54px;
     }
@@ -223,5 +218,6 @@
   .form__note{
     float: right;
     text-align: left;
+    line-height: 63px;
   }
 }

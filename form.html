@@ -92,13 +92,17 @@
                         <div class="form__item form__item_contacts">
                             <div class="form-group form-group_below">
                                 <label for="phone" class="form-group__label form-group__label_below">Номер телефона</label>
-                                <input type="text" class="form-group__input form-group__input_phone" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX">
+                                <div class="form-group__wrapper form-group__wrapper_phone">
+                                  <input type="text" class="form-group__input form-group__input_phone" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX">
+                                </div>
                             </div>
                         </div>
                         <div class="form__item form__item_contacts">
                             <div class="form-group form-group_below">
                                 <label for="email" class="form-group__label form-group__label_below">Адрес почты</label>
-                                <input type="text" class="form-group__input form-group__input_email" id="email" name="email" placeholder="Введите почту">
+                                <div class="form-group__wrapper form-group__wrapper_email">
+                                  <input type="text" class="form-group__input form-group__input_email" id="email" name="email" placeholder="Введите почту">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,40 +158,46 @@
                 </form>
         </section>
     </main>
-    <footer class="page-footer page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__item page-footer__item_logo">
-          <a href="#" class="logo">
-            <picture class="logo__picture">
-              <source media="(min-width: 1200px)" srcset="img/Pink-logo-footer-3@1x.png 1x, img/Pink-logo-footer-3@2x.png 2x">
-              <img class="logo__image" srcset="img/Pink-logo-footer-2@1x.png 1x, img/Pink-logo-footer-2@2x.png 2x">
-            </picture>
-          </a>
-        </div>
-        <div class="page-footer__item page-footer__item_social">
-          <div class="social">
-            <a href="#" class="social__link" target="_blank">
-              <svg class="social__svg social__svg_twitter">
-                <use xlink:href="img/twitter.svg#Layer_1"></use>
-              </svg>
-            </a>
-            <a href="#" class="social__link" target="_blank">
-              <svg class="social__svg social__svg_facebook">
-                <use xlink:href="img/facebook.svg#Layer_1"></use>
-              </svg>
-            </a>
-            <a href="#" class="social__link" target="_blank">
-              <svg class="social__svg social__svg_youtube">
-                <use xlink:href="img/youtube.svg#Layer_1"></use>
-              </svg>
-            </a>
+    <footer class="page-footer">
+          <div class="page-footer__wrapper">
+            <div class="page-footer__item page-footer__item_logo">
+              <a href="#" class="logo">
+                <picture class="logo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/Pink-logo-footer-3@1x.png 1x, img/Pink-logo-footer-3@2x.png 2x">
+                  <source media="(min-width: 700px)" srcset="img/Pink-logo-footer-2@1x.png 1x, img/Pink-logo-footer-2@2x.png 2x">
+                  <img class="logo__image" srcset="img/Pink-logo-1.svg">
+                </picture>
+              </a>
+            </div>
+            <div class="page-footer__item page-footer__item_social">
+              <div class="social">
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_twitter">
+                    <use xlink:href="img/twitter.svg#Layer_1"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_facebook">
+                    <use xlink:href="img/facebook.svg#Layer_1"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_youtube">
+                    <use xlink:href="img/youtube.svg#Layer_1"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="page-footer__item page-footer__item_copyright">
+              <div class="copyright"><a href="#" class="copyright__link">
+                <span class="copyright__text">Разработано</span>
+                <svg class="copyright__svg">
+                  <use xlink:href="img/htmlacademy.svg#Layer_1"></use>
+                </svg>
+              </a></div>
+            </div>
           </div>
-        </div>
-        <div class="page-footer__item page-footer__item_copyright">
-          <div class="copyright"><a href="#" class="copyright__link"></a></div>
-        </div>
-      </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
