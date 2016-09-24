@@ -8,15 +8,14 @@
   @include clearfix;
   @include container;
 }
-.photo-editor__photo{
-  outline: 1px solid red;
+.photo-editor__image{
   display: block;
   width: 280px;
   height: 374px;
   margin-bottom: 42px;
 }
 @media #{$tablet-widths} {
-  .photo-editor__photo{
+  .photo-editor__image{
     float: left;
     width: 300px;
     height: 400px;
@@ -26,7 +25,7 @@
 @media #{$tablet-widths} {
   .photo-editor__column{
     float: right;
-    width: 300px;
+    width: 275px;
   }
 }
 @media #{$desktop-widths} {
@@ -37,20 +36,33 @@
 }
 
 .photo-editor__controls{
-  outline: 1px solid red;
   height: 120px;
   margin-bottom: 38px;
+  border-bottom: 1px solid #dddfe0;
+}
+@media #{$mobile-widths-only} {
+  .photo-editor__control{
+    float: left;
+    width: 90px;
+    margin-right: 5px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
 }
 @media #{$tablet-widths} {
   .photo-editor__controls{
-    height: 200px;
-    margin-bottom: 68px;
+    flex-direction: column;
+    height: 210px;
+    margin-bottom: 58px;
+    border: none;
   }
 }
 @media #{$desktop-widths} {
   .photo-editor__controls{
-    height: 200px;
-    margin-bottom: 146px;
+    height: 210px;
+    margin-bottom: 136px;
+    border: none;
   }
 }
 

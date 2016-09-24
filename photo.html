@@ -48,7 +48,11 @@
                     <article class="photo photo_top">
                         <div class="photo__hot"></div>
                         <a href="" class="photo__link photo__link_top">
-                            <picture class="photo__picture photo__picture_top"></picture>
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photos/panorama-desktop@1x.jpg 1x, img/photos/panorama-desktop@2x.jpg 2x">
+                                <source media="(min-width: 700px)" srcset="img/photos/panorama-tablet@1x.jpg 1x, img/photos/panorama-tablet@2x.jpg 2x">
+                                <img class="photo__image photo__image_top" srcset="img/photos/panorama-mobile@1x.jpg 1x, img/photos/panorama-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content photo__content_top">
                             <header class="photo__header">
@@ -57,16 +61,25 @@
                             </header>
                             <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 215</span>
                             </footer>
                         </div>
                     </article>
                 </div>
+                <div class="photos__list">
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-1-desktop@1x.jpg 1x, img/photos/photo-1-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-1-tablet@1x.jpg 1x, img/photos/photo-1-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-1-mobile@1x.jpg 1x, img/photos/photo-1-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -75,7 +88,11 @@
                             </header>
                             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                              <a href="" class="photo__heart">
+                                <svg class="photo__heart-svg svg-icon_heart">
+                                  <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                </svg>
+                              </a>
                                 <span class="photo__likes">Нравится: 356</span>
                             </footer>
                         </div>
@@ -84,7 +101,11 @@
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-2-desktop@1x.jpg 1x, img/photos/photo-2-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-2-tablet@1x.jpg 1x, img/photos/photo-2-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-2-mobile@1x.jpg 1x, img/photos/photo-2-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -93,7 +114,11 @@
                             </header>
                             <p class="photo__comment">Соседи будут рады!</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 666</span>
                             </footer>
                         </div>
@@ -102,7 +127,11 @@
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-3-desktop@1x.jpg 1x, img/photos/photo-3-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-3-tablet@1x.jpg 1x, img/photos/photo-3-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-3-mobile@1x.jpg 1x, img/photos/photo-3-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -111,7 +140,11 @@
                             </header>
                             <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 215</span>
                             </footer>
                         </div>
@@ -120,7 +153,11 @@
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-4-desktop@1x.jpg 1x, img/photos/photo-4-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-4-tablet@1x.jpg 1x, img/photos/photo-4-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-4-mobile@1x.jpg 1x, img/photos/photo-4-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -129,7 +166,11 @@
                             </header>
                             <p class="photo__comment">Самая кубинская в мире!</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 4</span>
                             </footer>
                         </div>
@@ -138,7 +179,11 @@
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-5-desktop@1x.jpg 1x, img/photos/photo-5-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-5-tablet@1x.jpg 1x, img/photos/photo-5-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-5-mobile@1x.jpg 1x, img/photos/photo-5-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -147,7 +192,11 @@
                             </header>
                             <p class="photo__comment">Где снег-то?</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 150</span>
                             </footer>
                         </div>
@@ -156,7 +205,11 @@
                 <div class="photos__item">
                     <article class="photo">
                         <a href="" class="photo__link">
-                            <picture class="photo__picture"></picture>
+                            <picture class="photo__picture">
+                              <source media="(min-width: 1200px)" srcset="img/photos/photo-6-desktop@1x.jpg 1x, img/photos/photo-6-desktop@2x.jpg 2x">
+                              <source media="(min-width: 700px)" srcset="img/photos/photo-6-tablet@1x.jpg 1x, img/photos/photo-6-tablet@2x.jpg 2x">
+                              <img class="photo__image" srcset="img/photos/photo-6-mobile@1x.jpg 1x, img/photos/photo-6-mobile@2x.jpg 2x">
+                            </picture>
                         </a>
                         <div class="photo__content">
                             <header class="photo__header">
@@ -165,37 +218,58 @@
                             </header>
                             <p class="photo__comment">Всем GM и взаимные лайки!</p>
                             <footer class="photo__footer">
-                                <a href="" class="photo__hearth"></a>
+                                <a href="" class="photo__heart">
+                                  <svg class="photo__heart-svg svg-icon_heart">
+                                    <use xlink:href="img/icon-heart.svg#icon-heart"></use>
+                                  </svg>
+                                </a>
                                 <span class="photo__likes">Нравится: 2560</span>
                             </footer>
                         </div>
                     </article>
                 </div>
+              </div>
             </div>
             <div class="description">
                 <h2 class="description__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
             </div>
             <div class="photo-editor">
                 <div class="photo-editor__wrapper">
-                    <picture class="photo-editor__photo"></picture>
+                    <picture class="photo-editor__photo">
+                      <source media="(min-width: 1200px)" srcset="img/photos/photo-7-desktop@1x.jpg 1x, img/photos/photo-7-desktop@2x.jpg 2x">
+                      <source media="(min-width: 700px)" srcset="img/photos/photo-7-tablet@1x.jpg 1x, img/photos/photo-7-tablet@2x.jpg 2x">
+                      <img class="photo-editor__image" srcset="img/photos/photo-7-mobile@1x.jpg 1x, img/photos/photo-7-mobile@2x.jpg 2x">
+                    </picture>
                     <div class="photo-editor__column">
                         <div class="photo-editor__controls">
-                            <div class="photo-editor__сontrol">
-                                <div class="сontrol">
-                                    <div class="control__btn"></div>
-                                    <div class="control__slider"></div>
+                            <div class="photo-editor__control">
+                                <div class="control control_crop control_active">
+                                    <div class="control__btn control__btn_crop">
+                                      <svg class="control__svg control__svg_crop svg-icon svg-icon_crop">
+                                        <use xlink:href="img/icon-crop.svg#icon-crop"></use>
+                                      </svg>
+                                    </div>
+                                    <div class="control__slider"><div class="control__toggle"></div></div>
                                 </div>
                             </div>
                             <div class="photo-editor__control">
-                                <div class="сontrol">
-                                    <div class="control__btn"></div>
-                                    <div class="control__slider"></div>
+                                <div class="control control_fill">
+                                    <div class="control__btn control__btn_fill">
+                                      <svg class="control__svg control__svg_fill svg-icon svg-icon_fill">
+                                        <use xlink:href="img/icon-fill.svg#icon-fill"></use>
+                                      </svg>
+                                    </div>
+                                    <div class="control__slider"><div class="control__toggle"></div></div>
                                 </div>
                             </div>
                             <div class="photo-editor__control">
-                                <div class="сontrol">
-                                    <div class="control__btn"></div>
-                                    <div class="control__slider"></div>
+                                <div class="control control_contrast">
+                                    <div class="control__btn control__btn_contrast">
+                                      <svg class="control__svg control__svg_contrast svg-icon svg-icon_contrast">
+                                        <use xlink:href="img/icon-contrast.svg#icon-contrast"></use>
+                                      </svg>
+                                    </div>
+                                    <div class="control__slider"><div class="control__toggle"></div></div>
                                 </div>
                             </div>
                         </div>

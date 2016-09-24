@@ -1,14 +1,15 @@
 .photos{
   @include clearfix;
 }
-@media #{$tablet-widths} {
-  .photos{
-    @include container;
-  }
+
+.photos__list{
+  @include container;
 }
 .photos__item{
-  outline: 1px solid red;
   margin-bottom: 20px;
+  &_top{
+    width: 100%;
+  }
 }
 @media #{$tablet-widths} {
   .photos__item{
@@ -19,10 +20,10 @@
       width: 100%;
       margin-bottom: 50px;
     }
-    &:nth-child(2n-1){
+    &:nth-child(2n){
       margin-right: 0;
     }
-    &:nth-last-child(-n+3){
+    &:nth-last-child(-n+3):not(.photos__item_top){
       margin-bottom: 0;
     }
   }
@@ -31,10 +32,10 @@
   .photos__item{
     margin-right: 20px;
     margin-bottom: 54px;
-    &:nth-child(2n-1){
+    &:nth-child(2n){
       margin-right: 20px;
     }
-    &:nth-child(3n-2){
+    &:nth-child(3n){
       margin-right: 0;
     }
   }
