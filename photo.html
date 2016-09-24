@@ -210,26 +210,44 @@
         </div>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__wrapper">
+          <div class="page-footer__wrapper">
             <div class="page-footer__item page-footer__item_logo">
-                <div class="logo">
-                    <a href="#" class="logo__link"></a>
-                </div>
+              <a href="#" class="logo">
+                <picture class="logo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/Pink-logo-footer-3@1x.png 1x, img/Pink-logo-footer-3@2x.png 2x">
+                  <img class="logo__image" srcset="img/Pink-logo-footer-2@1x.png 1x, img/Pink-logo-footer-2@2x.png 2x">
+                </picture>
+              </a>
             </div>
             <div class="page-footer__item page-footer__item_social">
-                <div class="social">
-                    <a href="" class="social__link"></a>
-                    <a href="" class="social__link"></a>
-                    <a href="" class="social__link"></a>
-                </div>
+              <div class="social">
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_twitter">
+                    <use xlink:href="img/twitter.svg#Layer_1"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_facebook">
+                    <use xlink:href="img/facebook.svg#Layer_1"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link" target="_blank">
+                  <svg class="social__svg social__svg_youtube">
+                    <use xlink:href="img/youtube.svg#Layer_1"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
             <div class="page-footer__item page-footer__item_copyright">
-                <div class="copyright">
-                    <a href="#" class="copyright__link"></a>
-                </div>
+              <div class="copyright"><a href="#" class="copyright__link">
+                <span class="copyright__text">Разработано</span>
+                <svg class="copyright__svg">
+                  <use xlink:href="img/htmlacademy.svg#Layer_1"></use>
+                </svg>
+              </a></div>
             </div>
-        </div>
-    </footer>
+          </div>
+        </footer>
 </body>
 
 </html>
