@@ -6,9 +6,10 @@
     display: block;
   }
   .research__wrapper{
-    @include container;
+    @include container-fluid;
     min-height: 380px;
     padding-top: 100px;
+    padding-bottom: 60px;
     padding-left: 310px;
     background-image: url("../img/timer.svg");
     background-repeat: no-repeat;
@@ -41,7 +42,7 @@
     background-color: #f2f2f2;
   }
   .research__wrapper{
-    @include container;
+    @include container-fluid;
     min-height: 472px;
     padding-top: 155px;
     padding-left: 370px;
