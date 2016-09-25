@@ -68,7 +68,7 @@
 }
 @media #{$tablet-widths} {
   .beginning__wrapper{
-    @include container;
+    @include container-fluid;
     display: block;
     min-height: 0px;
   }
