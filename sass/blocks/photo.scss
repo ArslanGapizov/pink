@@ -13,7 +13,7 @@
   }
 }
 .photo__hot{
-  @include container;
+  @include container-fluid;
   position: relative;
   &:before{
     position: absolute;
@@ -39,31 +39,24 @@
 
 .photo__image{
   display: block;
-  height: 180px;
-  &_top{
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
 }
 @media #{$tablet-widths} {
   .photo__image{
-    height: 300px;
-    &_top{
-      height: auto;
-    }
+    height: auto;
   }
 }
 @media #{$desktop-widths} {
   .photo__image{
-    height: 400px;
-    &_top{
-      height: auto;
-    }
+    height: auto;
   }
 }
 .photo__link_top{
 }
 .photo__content{
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 18px;
@@ -72,26 +65,21 @@
   line-height: 24px;
   background-color: #f2f2f2;
   &_top{
-    @include container;
+    @include container-fluid;
   }
 }
 @media #{$tablet-widths} {
   .photo__content{
     position: relative;
-    height: 155px;
+    min-height: 155px;
     padding-top: 25px;
     padding-left: 28px;
     padding-right: 28px;
     padding-bottom: 25px;
     color: #283645;
     &_top{
-      height: auto;
+      min-height: auto;
     }
-  }
-}
-@media #{$desktop-widths} {
-  .photo__content{
-
   }
 }
 .photo__name{
@@ -106,21 +94,30 @@
 .photo__comment{
   margin-bottom: 6px;
 }
+.photo__footer{
+  display: flex;
+  color: #d22856;
+  margin-top: auto;
+}
+
 @media #{$tablet-widths} {
-  .photo__footer{
-    position: absolute;
-    bottom: 25px;
-    left: 28px;
-    right: 28px;
-    color: #d22856;
-  }
-  .photo__content_top .photo__footer{
-    left: auto;
-    padding-right: 30px;
-    bottom: auto;
-    top: 25px;
+  .photo__content_top{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    .photo__header{
+      flex-grow: 1;
+    }
+    .photo__comment{
+      width: 100%;
+      order: 1;
+    }
+    .photo__footer{
+      margin-top: 0;
+    }
   }
 }
+
 .photo__heart svg{
   fill: #d22856;
 }
@@ -139,10 +136,15 @@
   }
 }
 @media #{$tablet-widths} {
+  .photo__footer{
+    justify-content: space-between;
+  }
   .photo__heart{
+    order: 1;
     margin-right: 0;
-    position: absolute;
-    right: 0;
+  }
+  .photo__content_top .photo__heart{
+    margin-left: 18px;
   }
 }
 .photo__likes{
