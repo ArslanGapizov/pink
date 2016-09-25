@@ -18,7 +18,7 @@
   }
 }
 .tariffs__wrapper{
-  @include container;
+  @include container-fluid;
   position: relative;
   min-height: 470px;
   padding-top: 90px;
@@ -38,19 +38,19 @@
 }
 .tariffs__table{
   position: relative;
-  width: 840px;
+  width: 300%;
   transition: 0.3s;
 }
 @media #{$tablet-widths} {
   .tariffs__table{
     position: static;
-    width: 620px;
+    width: 100%;
   }
 }
 @media #{$desktop-widths} {
   .tariffs__table{
     position: static;
-    width: 940px;
+    width: 100%;
   }
 }
 
@@ -61,6 +61,7 @@
 }
 @media #{$tablet-widths} {
   .tariffs__option{
+    width: 25%;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 14px;
@@ -80,7 +81,6 @@
 .tariffs__th{
   position: relative;
   height: 98px;
-  width: 280px;
   background-color: #283645;
   color: #fff;
   overflow: hidden;
@@ -99,7 +99,7 @@
 @media #{$tablet-widths} {
   .tariffs__th{
     height: 80px;
-    width: 155px;
+    width: 25%;
   }
   .tariffs__title{
     font-size: 16px;
@@ -111,7 +111,6 @@
 @media #{$desktop-widths} {
   .tariffs__th{
     height: 100px;
-    width: 235px;
   }
   .tariffs__title{
     font-size: 18px;
@@ -165,7 +164,6 @@
 .tariffs__cell{
   @include clearfix;
   height: 60px;
-  width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   vertical-align: middle;
@@ -176,14 +174,14 @@
 @media #{$tablet-widths} {
   .tariffs__cell{
     height: 46px;
-    width: 155px;
+    width: 25%;
     text-align: center;
   }
 }
 @media #{$desktop-widths} {
   .tariffs__cell{
     height: 60px;
-    width: 235px;
+    /*width: 235px;*/
   }
 }
 .tariffs__icon{
@@ -222,6 +220,8 @@
   bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
   width: 62px;
   height: 12px;
 }
@@ -237,10 +237,8 @@
 }
 .tariffs__toggle{
   display: block;
-  float: left;
   height: 12px;
   width: 12px;
-  margin-right: 13px;
   background-color: #bec2c7;
   background-clip: content-box;
   background-origin: content-box;
@@ -254,19 +252,16 @@
   &:active{
     background-color: #e9ebec;
   }
-  &:last-of-type{
-    margin-right: 0;
-  }
 }
 @media #{$mobile-widths-only} {
   #tariffs-toggle-1:checked ~ .tariffs__table{
     left: 0;
   }
   #tariffs-toggle-2:checked ~ .tariffs__table{
-    left: -280px;
+    left: -100%;
   }
   #tariffs-toggle-3:checked ~ .tariffs__table{
-    left: -560px;
+    left: -200%;
   }
 }
 @for $i from 1 through 3{
