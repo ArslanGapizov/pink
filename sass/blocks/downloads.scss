@@ -45,7 +45,9 @@
   }
 }
 .downloads__links{
-  @include clearfix;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 56px;
   padding-left: 37px;
   padding-right: 38px;
@@ -63,18 +65,11 @@
     padding-left: 48px;
     padding-right: 48px;
     margin-bottom: 55px;
-    vertical-align: middle;
   }
 }
 .downloads__link{
-  display: inline-block;
-  vertical-align: middle;
   font-size: 0;
   color: transparent;
-  margin-right: 31px;
-  &:last-of-type{
-    margin-right: 0;
-  }
 }
 .downloads__svg{
   &_apple {
