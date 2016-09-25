@@ -1,29 +1,45 @@
 .form{
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
 }
 @media #{$tablet-widths} {
   .form{
-    @include container;
+    @include container-fluid;
   }
 }
-.form__fieldset{
-  padding-top: 35px;
-  padding-bottom: 45px;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-  &_name{
+@media #{$desktop-widths} {
+  .form{
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  &_os{
-    background: #f2f2f2;
+}
+@media #{$mobile-widths-only} {
+  .form__fieldset{
+    padding-top: 35px;
+    padding-bottom: 45px;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    &_name{
+      order: 1;
+    }
+    &_os{
+      order: 4;
+      background: #f2f2f2;
+    }
+    &_contacts{
+      order: 3;
+    }
+    &_achievements{
+      order: 2;
+      background: #f2f2f2;
+    }
+    &_textarea{
+      order: 5;
+    }
   }
-  &_contacts{
-
-  }
-  &_achievements{
-    background: #f2f2f2;
-  }
-  &_textarea{
-
+  .form__footer{
+    order: 6;
   }
 }
 @media #{$tablet-widths} {
@@ -34,20 +50,17 @@
     padding-right: 60px;
     margin-bottom: 65px;
     &_name{
-      border: none;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
       padding-bottom: 0;
     }
     &_os{
-      background: none;
     }
     &_contacts{
 
     }
     &_achievements{
-      background: none;
     }
     &_textarea{
 
@@ -61,12 +74,12 @@
 }
 @media #{$desktop-widths} {
   .form__fieldset{
+    width: 100%;
     padding-top: 35px;
     padding-bottom: 45px;
     padding-left: 60px;
     padding-right: 60px;
     &_name{
-      float: left;
       width: 436px;
       padding-left: 0;
       padding-right: 0;
@@ -75,18 +88,23 @@
     }
     &_os{
       background: none;
-      float: right;
+      margin-left: auto;
       width: 436px;
       padding-top: 50px;
-      padding-bottom: 51px;
+      padding-bottom: 50px;
     }
     &_contacts{
-      @include clearfix;
-      clear: both;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     &_achievements{
-      @include clearfix;
-      background: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-wrap: wrap;
+      height: 200px;
     }
     &_textarea{
 
@@ -165,24 +183,12 @@
     }
     &_contacts{
       margin-bottom: 0;
-      float: left;
-      margin-right: 66px;
       width: 375px;
-      &:last-of-type{
-        margin-right: 0;
-      }
     }
     &_achievements{
-      float: left;
-      margin-bottom: 44px;
+      margin: 0;
       width: 260px;
-      margin-right: 18px;
-      &:nth-child(3n-2){
-        margin-right: 0;
-      }
-      &:nth-last-child(-n+3){
-        margin-bottom: 0;
-      }
+      width: 33%;
     }
   }
 }
@@ -207,7 +213,6 @@
   }
 }
 .form__footer{
-  @include clearfix;
   margin-left: 6.25%;
   margin-right: 6.25%;
 }
@@ -224,16 +229,14 @@
 }
 @media #{$tablet-widths} {
   .form__footer{
-    @include container;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .form__btn{
     margin-bottom: 0;
-    float: left;
     width: 300px;
-  }
-  .form__note{
-    float: right;
-    text-align: left;
-    line-height: 63px;
   }
 }
