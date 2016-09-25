@@ -10,11 +10,19 @@
 @mixin container {
   width: 280px;
   margin: 0 auto;
-
   @media #{$tablet-widths} {
     width: 620px;
   }
   @media #{$desktop-widths} {
     width: 940px;
+  }
+}
+@mixin container-fluid {
+  width: 87.5%;
+  min-width: 280px;
+  margin: 0 auto;
+  @media #{$tablet-widths} {
+    width: 89%;
+    max-width: 940px;
   }
 }
