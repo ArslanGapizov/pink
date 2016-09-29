@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var server = require("browser-sync");
 var run = require("run-sequence");
 var del = require("del");
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("style", function() {
    gulp.src("sass/style.scss")
@@ -31,10 +32,10 @@ gulp.task("style", function() {
        sort: false
      })
    ]))
-   .pipe(gulp.dest("css"))/*build*/
+   .pipe(gulp.dest("build/css"))/*build*/
    .pipe(minify())
    .pipe(rename("style.min.css"))
-   .pipe(gulp.dest("css"))/*build*/
+   .pipe(gulp.dest("build/css"))/*build*/
    .pipe(server.reload({stream: true}));
 });
 
@@ -48,18 +49,18 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-    return gulp.src("build/img/icons/*.svg")
+    return gulp.src("img/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("symbols.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("serve",["style"], function() {
    server.init({
-       server: "."/*build*/
+       server: "build"/*build*/
    });
 
     gulp.watch("sass/**/*.scss", ["style"]);
@@ -85,3 +86,8 @@ gulp.task("copy", function() {
 gulp.task("build", function(fn) {
   run("clean", "copy", "style", "images", "symbols", fn);
 })
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
