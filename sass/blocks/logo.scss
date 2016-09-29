@@ -1,0 +1,88 @@
+@keyframes StarsHover{
+  from{
+    fill: $pink-color;
+  }
+  to{
+    fill: #ffd800;
+  }
+}
+.logo__desktop,
+.logo__tablet{
+  display: none;
+}
+@media #{$mobile-widths-only} {
+  .logo__svg{
+    &_header{
+      .logo__mobile{
+        display: inline;
+      }
+    }
+    &_footer{
+      .logo__tablet{
+        display: inline;
+      }
+    }
+  }
+}
+.logo__svg{
+  transition: 0.3s;
+  &_header{
+    fill: #fff;
+    width: 75px;
+    height: 22px;
+    &:hover{
+      fill: $pink-color;
+    }
+    &:active{
+      fill: #fff;
+      opacity: 0.3;
+    }
+  }
+  &_footer{
+    fill: $dark-color;
+    height: 40px;
+    width: 147px;
+    &:hover{
+      fill: $pink-color;
+    }
+    &:active{
+      fill: $dark-color;
+      opacity: 0.3;
+    }
+  }
+}
+@media #{$tablet-widths} {
+  .logo__mobile{
+    display: none;
+  }
+  .logo__svg{
+    height: 40px;
+    width: 147px;
+  }
+  .logo__svg_footer .logo__glasses{
+    fill: $pink-color;
+  }
+  .logo__tablet{
+    display: inline;
+  }
+}
+@media #{$desktop-widths} {
+  .logo__tablet{
+    display: none;
+  }
+  .logo__desktop{
+    display: inline;
+  }
+  .logo__stars{
+    fill: $pink-color;
+  }
+  .logo__svg:hover .logo__stars{
+    animation-name: StarsHover;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .logo__svg:active .logo__stars{
+    animation: none;
+  }
+}
