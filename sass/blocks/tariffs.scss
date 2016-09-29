@@ -190,12 +190,10 @@
   &_true{
     width: 31px;
     height: 21px;
-    background-image: url("../img/yes.svg");
   }
   &_false{
     width: 27px;
     height: 27px;
-    background-image: url("../img/no.svg");
   }
 }
 @media #{$mobile-widths-only} {
