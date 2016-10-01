@@ -3,7 +3,7 @@
 Использованные технологии:
 * HTML and CSS
 * SASS
-* Gulp
+* Gulp</br>
 Страницы:
 * [main page](http://arslangapizov.github.io/pink)
 * [form page](http://arslangapizov.github.io/pink/form.html)
