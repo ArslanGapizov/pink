@@ -4,3 +4,6 @@
 * HTML and CSS
 * SASS
 * Gulp
+[main page](http://arslangapizov.github.io/pink)
+[form page](http://arslangapizov.github.io/pink/form.html)
+[photo page](http://arslangapizov.github.io/pink/photo.html)
