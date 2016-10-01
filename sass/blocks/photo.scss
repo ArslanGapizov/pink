@@ -124,6 +124,9 @@
 .photo__heart{
   display: inline-block;
   margin-right: 18px;
+  svg{
+    transition: 0.3s;
+  }
   &:hover{
     svg{
       fill: #000;

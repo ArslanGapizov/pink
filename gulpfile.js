@@ -88,6 +88,6 @@ gulp.task("build", function(fn) {
 })
 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
